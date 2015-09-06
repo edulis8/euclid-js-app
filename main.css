@@ -1,0 +1,29 @@
+body {
+	font-family: 'Fira Sans', sans-serif;
+	max-width: 600px;
+	background-color: #ECF0F1;
+	margin: 0 16rem;
+
+
+}
+
+input {
+	margin: 10px;
+}
+
+h1{
+	color: #E74C3C;
+}
+
+.btn {
+	background-color: #3498DB;
+}
+
+.jumbotron {
+	margin: 0 auto;
+	
+}
+
+#demo {
+	margin-top: 3rem;
+}
