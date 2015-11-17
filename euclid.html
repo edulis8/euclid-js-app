@@ -26,8 +26,42 @@
         </div>
         <p>Calculate the euclidean distance between the two points!:</p>
         <button class="btn btn-info" onclick="myFunction()">Calculate!</button>
+        <br/>
+       <br/>
+        <button class="btn btn-success show">Show Code</button>
+        <hr/>
+        <div class="demo">
+        <h3>The Code <small>by Eric Broberg, August 2015</small></h3>
+        <code><pre>
+
        
-        <h3 id="demo"></h3>
+        var merge = function(array1, array2, callback){ 
+        
+            var mergedArr = [];
+        
+  
+            for(var i = 0; i &lt; array1.length; i++){
+                mergedArr.push(callback(array1[i], array2[i]));
+    
+            }
+
+            return mergedArr;
+
+        };
+
+       
+
+        var euclid = function(coords1, coords2){
+                var squaredDeltas = merge(coords1, coords2, function(a,b){
+                return Math.abs((a-b)*(a-b));
+            });
+
+            var answer = Math.sqrt(squaredDeltas[0] + squaredDeltas[1]);
+
+            return answer;
+        };
+
+</pre></code></div>
         
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
