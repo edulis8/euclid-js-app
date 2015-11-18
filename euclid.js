@@ -30,12 +30,27 @@ var euclid = function(coords1, coords2){
 	return answer;
 };
 
+// operate on vals
 
-//JQUERY
+$("#calcbutton").click(function() {
+  
+  var x1 = $('#x1').val(), x2 = $('#x2').val(), y1 = $('#y1').val(), y2 = $('#y2').val();
+
+  var coords1 = [x1, y1], coords2 = [x2, y2];
+
+  var result = euclid(coords1, coords2); 
+
+  $('#answerh4').html(result)
+});
+
+
+// show code button
 
 $(".show").click(function(event) {
   $(".demo").fadeIn();
 });
+
+
 
 
 

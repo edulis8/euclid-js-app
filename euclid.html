@@ -18,18 +18,23 @@
             <form id="frm1">
                 
                 <h4>Input first set of xy coordinates:</h4>
-                x: <input size = "2" type="text" value=""> y: <input size = "2" type="text" value="">
+                x: <input size = "2" type="text" value="" id="x1"> y: <input size = "2" type="text" value="" id="y1">
                 <h4>Input second set of xy coordinates:</h4>
-                x <input size = "2" type="text" value=""> y: <input size = "2" type="text" value="">
+                x <input size = "2" type="text" value="" id="x2"> y: <input size = "2" type="text" value="" id="y2">
                 
             </form>
         </div>
         <p>Calculate the euclidean distance between the two points!:</p>
-        <button class="btn btn-info" onclick="myFunction()">Calculate!</button>
+        <button class="btn btn-info" id="calcbutton" onclick="myFunction()">Calculate!</button>
+        <br>
+        <br>
+        <div id="answerdiv"><h4 id="answerh4"></h4></div>
+        <br/>
         <br/>
        <br/>
         <button class="btn btn-success show">Show Code</button>
         <hr/>
+
         <div class="demo">
         <h3>The Code <small>by Eric Broberg, August 2015</small></h3>
         <code><pre>
@@ -71,7 +76,7 @@
         <script src="euclid.js"></script>
         
         <script>
-        function myFunction() {
+        /*function myFunction() {
         var x = document.forms["frm1"];
         console.log("Logging x.elements[0].value: " + parseInt(x.elements[0].value) + "" + typeof x.elements[0].value);
         console.log("Logging x.elements[1].value: " + x.elements[1].value);
@@ -84,7 +89,7 @@
         euclidResult = euclid([x.elements[0].value, x.elements[1].value], [x.elements[2].value, x.elements[3].value]);
         
         document.getElementById("demo").innerHTML = "The answer is: " + euclidResult;
-        }
+        }*/
         </script>
         <!-- ========================================================================================  -->
         <script src="js/main.js"></script>
